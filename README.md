@@ -68,7 +68,6 @@ Is a key value object with specific configuration
 | `analyzeIn`      | `Array`  | `[]`      |           List of folders you want to analyze files           |
 | `ignorePatterns` | `Array`  | `[]`      |          List of folders you exclude from analyzing           |
 | `mode`           | `String` | `analyze` |   `analyze` or `cleanup` (analyze and remove unused files)    |
-| `analyzeComments` | `Boolean` | `true`  |               Analyzing commented dependencies                |
 
 If `analyzeFrom`, `analyzeIn` are empty or not defined, files will be analyzed for all project files.
 
@@ -85,14 +84,12 @@ Config example
       "analyzeIn": ["/components"],
       "ignorePatterns": ["/configs"],
       "mode": "cleanup",
-      "analyzeComments": true
     },
     "js": {
       "analyzeFrom": ["/configs", "/assets"],
       "analyzeIn": [], <- files will be analyzed throughout the project
       "ignorePatterns": [],
-      "mode": "analyze",
-      "analyzeComments": false
+      "mode": "analyze"
     }
   }
 }
