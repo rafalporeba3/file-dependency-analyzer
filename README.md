@@ -32,6 +32,22 @@ To run a script you need `npx` (npm is not currently supported)
 
 ## Config
 
+Default ignore patterns (analyzing will be excluded in below folders)
+```
+[
+    'node_modules',
+    'git',
+    'vscode',
+    'idea',
+    'package.json',
+    'package-lock.json',
+    'README.md',
+    'dist',
+]
+```
+
+You can add specific `globalIgnorePatterns` in config
+
 ---
 
 | Property             | Type    | Default |                        Description                        |
@@ -62,14 +78,21 @@ Config example
 
 ```
 {
-  "globalIgnorePatterns": [],
+  "globalIgnorePatterns": [".docker-cache"],
   "extensions": {
     "svg": {
-      "analyzeFrom": [],
-      "analyzeIn": [],
-      "ignorePatterns": [],
+      "analyzeFrom": [], <- it will search for all svg files throughout the project
+      "analyzeIn": ["/components"],
+      "ignorePatterns": ["/configs"],
       "mode": "cleanup",
       "analyzeComments": true
+    },
+    "js": {
+      "analyzeFrom": ["/configs", "/assets"],
+      "analyzeIn": [], <- files will be analyzed throughout the project
+      "ignorePatterns": [],
+      "mode": "analyze",
+      "analyzeComments": false
     }
   }
 }

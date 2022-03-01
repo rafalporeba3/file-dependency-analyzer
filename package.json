@@ -6,9 +6,6 @@
   "main": "index.js",
   "type": "module",
   "license": "MIT",
-  "scripts": {
-    "start": "node ./bin/index.js ./file-analyzer.json"
-  },
   "bin": "./bin/index.js",
   "dependencies": {
     "chalk": "^5.0.0"
