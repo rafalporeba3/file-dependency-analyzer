@@ -34,14 +34,15 @@ To run a script you need `npx` (npm is not currently supported)
 ### Extensions
 Is a key value object with specific configuration
 
-| Property         | Type     | Default   |                       Description                        |
-|------------------|:---------|:----------|:--------------------------------------------------------:|
-| `analyzeFrom`    | `Array`  | `[]`      |    List of folders where files to analyze are located    |
-| `analyzeIn`      | `Array`  | `[]`      |        List of folders you want to analyze files         |
-| `ignorePatterns` | `Array`  | `[]`      |        List of folders you exclude from analyzing        |
-| `mode`           | `String` | `analyze` | `analyze` or `cleanup` (analyze and remove unused files) |
-| `analyzeComments` | `Boolean` | `true`  |             Analyzing commented dependencies             |
+| Property         | Type     | Default   |                          Description                          |
+|------------------|:---------|:----------|:-------------------------------------------------------------:|
+| `analyzeFrom`    | `Array`  | `[]`      | List of folders where files to analyze are located |
+| `analyzeIn`      | `Array`  | `[]`      |           List of folders you want to analyze files           |
+| `ignorePatterns` | `Array`  | `[]`      |          List of folders you exclude from analyzing           |
+| `mode`           | `String` | `analyze` |   `analyze` or `cleanup` (analyze and remove unused files)    |
+| `analyzeComments` | `Boolean` | `true`  |               Analyzing commented dependencies                |
 
+If `analyzeFrom`, `analyzeIn` are empty or not defined, files will be analyzed for all project files.
 
 Config example
 
