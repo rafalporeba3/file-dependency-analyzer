@@ -2,7 +2,7 @@
   "name": "file-dependency-analyzer",
   "description": "Tool used to analyze and cleanup unused files",
   "author": "Rafal Poreba",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
