@@ -2,12 +2,12 @@
   "name": "file-dependency-analyzer",
   "description": "Tool used to analyze and cleanup unused files",
   "author": "Rafal Poreba",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start": "node ./bin/index.js"
+    "start": "node ./bin/index.js ./file-analyzer.json"
   },
   "bin": "./bin/index.js",
   "dependencies": {
@@ -26,7 +26,8 @@
     "analyzer",
     "cleanup",
     "remove",
-    "files"
+    "files",
+    "javaScript"
   ],
   "bugs": {
     "url": "https://github.com/rafalporeba3/file-dependency-analyzer/issues"

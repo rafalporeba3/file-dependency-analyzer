@@ -1,7 +1,0 @@
-{
-    "svg": {
-        "ignorePatterns": ["static/icons/20px"],
-        "mode": "analyze",
-        "analyzeComments": true
-    }
-}
