@@ -8,11 +8,17 @@ Tool is fully customizable, you can specify folders you want to analyze files in
 
 ## Installation
 
+---
+
+
 ```
  npm install -D file-dependency-analyzer
 ```
 
 ## Usage
+
+---
+
 To run a script you need `npx` (npm is not currently supported)
 
 ```
@@ -25,6 +31,9 @@ To run a script you need `npx` (npm is not currently supported)
 ```
 
 ## Config
+
+---
+
 | Property             | Type    | Default |                        Description                        |
 |----------------------|:--------|:------|:---------------------------------------------------------:|
 | `globalIgnorePatterns` | `Array` | `[]`  | List of all folders/paths you want exclude from analyzing |
@@ -33,6 +42,9 @@ To run a script you need `npx` (npm is not currently supported)
 
 ### Extensions
 Is a key value object with specific configuration
+
+---
+
 
 | Property         | Type     | Default   |                          Description                          |
 |------------------|:---------|:----------|:-------------------------------------------------------------:|
@@ -45,6 +57,8 @@ Is a key value object with specific configuration
 If `analyzeFrom`, `analyzeIn` are empty or not defined, files will be analyzed for all project files.
 
 Config example
+
+---
 
 ```
 {
@@ -61,3 +75,8 @@ Config example
 }
 
 ```
+
+## License
+
+---
+Copyright (c) 2022 Rafal Poreba. Licensed under the MIT license.
