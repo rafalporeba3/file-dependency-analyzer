@@ -1,0 +1,35 @@
+{
+  "name": "file-dependency-analyzer",
+  "description": "Tool used to analyze and cleanup unused files",
+  "author": "Rafal Poreba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bin/index.js"
+  },
+  "bin": "./bin/index.js",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalporeba3/file-dependency-analyzer.git"
+  },
+  "keywords": [
+    "svg",
+    "analyzer",
+    "cleanup",
+    "remove",
+    "files"
+  ],
+  "bugs": {
+    "url": "https://github.com/rafalporeba3/file-dependency-analyzer/issues"
+  },
+  "homepage": "https://github.com/rafalporeba3/file-dependency-analyzer#readme"
+}
